@@ -15,7 +15,7 @@ const useMovieDetail = () => {
   useEffect(() => {
     if (!id) return;
     getMovieDetailAction({ id });
-  }, [id]);
+  }, [id, getMovieDetailAction]);
 
   const toggleFavourite = () => {
     if (!movieDetail) return;

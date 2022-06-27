@@ -30,7 +30,7 @@ function createActionSagaHook<D>(appActionType: APP_ACTIONS) {
             },
           });
         }),
-      [],
+      [actionDispatch],
     );
 
     const error = useSelector(selectActionError(appActionType));

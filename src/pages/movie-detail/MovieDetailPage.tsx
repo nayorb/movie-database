@@ -17,11 +17,11 @@ const MovieDetailPage = () => {
       dispatch(moviesSliceActions.removeMovieDetail());
       dispatch(moviesSliceActions.setSelectedMovieId(undefined));
     };
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     dispatch(moviesSliceActions.setSelectedMovieId(id));
-  }, [id]);
+  }, [id, dispatch]);
 
   if (!movieDetail) return null;
   console.log("movieDetail", movieDetail);
