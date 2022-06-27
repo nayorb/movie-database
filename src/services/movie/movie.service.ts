@@ -3,7 +3,7 @@ import mapSearchMoviesToAppMovies from "./mappers/mapSearchMoviesToAppMovies";
 import mapMovieToAppMovieDetail from "./mappers/mapMovieToAppMovieDetail";
 
 export const OMDB_API_KEY = "bee67ab4";
-const API_URL_BASE = `http://www.omdbapi.com/?apikey=${OMDB_API_KEY}&`;
+const API_URL_BASE = `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&`;
 
 export interface ISearchMovieInput {
   query: string;
