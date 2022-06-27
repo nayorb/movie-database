@@ -6,9 +6,7 @@ import useMovieDetail from "../../hooks/movie-detail/useMovieDetail";
 import { moviesSliceActions } from "../../redux-store/store-modules/movies/movies-slice";
 import MovieDetailPageComponents from "./MovieDetailPage.styles";
 
-export interface MovieDetailPageProps {}
-
-const MovieDetailPage = ({}: MovieDetailPageProps) => {
+const MovieDetailPage = () => {
   const { id } = useParams();
   const { movieDetail } = useMovieDetail();
 

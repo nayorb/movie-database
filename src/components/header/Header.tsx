@@ -9,9 +9,7 @@ import useMovieDetail from "../../hooks/movie-detail/useMovieDetail";
 import useMovieSnapshot from "../../hooks/movie-snapshot/useMovieSnapshot";
 import useSearchResults from "../../hooks/search-results/useSearchResults";
 
-export interface HeaderProps {}
-
-const Header = ({}: HeaderProps) => {
+const Header = () => {
   const { isLoading, search, query, setQuery } = useSearch();
   const { totalResults } = useSearchResults();
   const navigate = useNavigate();

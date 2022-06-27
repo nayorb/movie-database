@@ -1,12 +1,10 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import { Box, Grid, Typography, useTheme } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import SearchInput from "../../components/search-input/SearchInput";
 import useSearch from "../../hooks/search/useSearch";
-import { useNavigate } from "react-router-dom";
 
-export interface HomePageProps extends PropsWithChildren {}
-
-const HomePage = ({}: HomePageProps) => {
+const HomePage = () => {
   const { isLoading, search, query, setQuery } = useSearch();
   const navigate = useNavigate();
   const theme = useTheme();

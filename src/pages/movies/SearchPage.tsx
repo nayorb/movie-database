@@ -5,9 +5,7 @@ import MovieLink from "../../components/movie-link/MovieLink";
 import SearchInput from "../../components/search-input/SearchInput";
 import useSearch from "../../hooks/search/useSearch";
 
-export interface MoviesPageProps {}
-
-const SearchPage = ({}: MoviesPageProps) => {
+const SearchPage = () => {
   const { currentPage, searchMovies, totalResults, pageCount, setPage, isLoading, error } = useSearchResults();
   const { search, query, setQuery } = useSearch();
   return (
