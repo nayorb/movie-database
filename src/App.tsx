@@ -11,6 +11,7 @@ import AppComponents from "./App.styles";
 import "./index.css";
 import theme from "./theme";
 import HomePage from "./pages/home/HomePage";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
               <Route path="/favourites" element={<FavouriteMoviesPage />} />
             </Routes>
           </Provider>
+          <Footer />
         </BrowserRouter>
       </AppComponents.AppWrapper>
     </ThemeProvider>
