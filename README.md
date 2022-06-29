@@ -1,5 +1,5 @@
 # PUBLISHED VERSION:
-####https://nayorb-movie-database.netlify.app/
+https://nayorb-movie-database.netlify.app/
 
 
 #
